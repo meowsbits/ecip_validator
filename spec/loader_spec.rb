@@ -6,7 +6,8 @@ RSpec.describe "EipValidator::Loader"  do
   let(:status) { 'Final' }
   let(:eip){
     {
-      "eip" => 145,
+      "ecip" => 145,
+      "lang" => 'en',
       "title" => 'Bitwise shifting instructions in EVM',
       "author" => 'Alex Beregszaszi, Paweł Bylica',
       "type" => type,
