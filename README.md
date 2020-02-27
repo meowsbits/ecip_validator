@@ -19,7 +19,7 @@ ecip_validator INPUT_FILES
 ## Usage (as a lib)
 
 ```ruby
-require 'ecip_validator
+require 'ecip_validator'
 
 EcipValidator::Runner.run 
 ```
