@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'eip_validator'
+require 'ecip_validator'
 
 EcipValidator::Runner.run ARGV

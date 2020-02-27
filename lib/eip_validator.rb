@@ -1,6 +1,6 @@
-require "eip_validator/version"
-require 'eip_validator/loader'
-require 'eip_validator/validator'
+require "ecip_validator/version"
+require 'ecip_validator/loader'
+require 'ecip_validator/validator'
 
 module EcipValidator
   class Runner
@@ -17,8 +17,8 @@ module EcipValidator
         layers = []
         file_names.map do |file_name|
           # Disable file check
-          # unless file_name.match(/.*eip-\d+.md$/)
-          #   puts "Warning: #{file_name} does not match eip file format"
+          # unless file_name.match(/.*ecip-\d+.md$/)
+          #   puts "Warning: #{file_name} does not match ecip file format"
           #   next
           # end
           attributes = Loader.load(file_name)

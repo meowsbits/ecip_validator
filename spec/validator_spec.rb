@@ -5,7 +5,7 @@ RSpec.describe "EcipValidator::Validator"  do
   let(:category) { 'Core' }
   let(:type) { 'Standards Track' }
 
-  let(:eip){
+  let(:ecip){
     {
       ecip: 145,
       lang: 'en',
@@ -18,7 +18,7 @@ RSpec.describe "EcipValidator::Validator"  do
       created: '2017-02-13'
     }
   }
-  subject(:validator){ EcipValidator::Validator.new(eip)}
+  subject(:validator){ EcipValidator::Validator.new(ecip)}
 
   describe "valid" do
     it "should have required fields" do
@@ -58,12 +58,12 @@ RSpec.describe "EcipValidator::Validator"  do
 
   describe "attribute with -" do
     it "is valid if specified" do
-      EcipValidator::Validator.new(eip.merge({'discussions-to':'something'}))
+      EcipValidator::Validator.new(ecip.merge({'discussions-to':'something'}))
     end
  
     it "not valid if not specified" do
       expect{
-        EcipValidator::Validator.new(eip.merge({'how-to':'something'}))
+        EcipValidator::Validator.new(ecip.merge({'how-to':'something'}))
       }.to raise_error(/unknown attribute/)
     end
   end
@@ -71,7 +71,7 @@ RSpec.describe "EcipValidator::Validator"  do
   describe "attribute with _" do
     it "not valid" do
       expect{
-        EcipValidator::Validator.new(eip.merge({'discussions_to':'something'}))
+        EcipValidator::Validator.new(ecip.merge({'discussions_to':'something'}))
       }.to raise_error("discussions_to incude _ which is not allowed")
     end
   end

@@ -1,7 +1,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "eip_validator/version"
+require "ecip_validator/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ecip_validator"
