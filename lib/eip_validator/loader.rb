@@ -6,9 +6,10 @@ module EipValidator
     UNSAFE_LOADER = ->(string) { YAML.load(string) }
 
     def self.load(file_name)
-      loaded = FrontMatterParser::Parser.parse_file(file_name, loader: UNSAFE_LOADER)
-      if loaded
-        return loaded.front_matter
+      begin
+        FrontMatterParser::Parser.parse_file(file_name, loader: UNSAFE_LOADER).front_matter
+      rescue
+        puts "frontmatterparser rescued from a nil death"
       end
     end
   end
