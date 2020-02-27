@@ -2,7 +2,7 @@ require "eip_validator/version"
 require 'eip_validator/loader'
 require 'eip_validator/validator'
 
-module EipValidator
+module EcipValidator
   class Runner
     class << self  
       def run(file_names)

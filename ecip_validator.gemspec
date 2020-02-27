@@ -5,7 +5,7 @@ require "eip_validator/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ecip_validator"
-  spec.version       = EipValidator::VERSION
+  spec.version       = EcipValidator::VERSION
   spec.authors       = ["Makoto"]
   spec.email         = ["@makoto_inoue"]
 

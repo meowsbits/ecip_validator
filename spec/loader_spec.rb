@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe "EipValidator::Loader"  do
+RSpec.describe "EcipValidator::Loader"  do
   let(:category) { 'Core' }
   let(:type) { 'Standards Track' }
   let(:status) { 'Final' }
@@ -21,7 +21,7 @@ RSpec.describe "EipValidator::Loader"  do
    'spec/fixtures/valid/eip-145.md'
   }
 
-  subject(:loader){ EipValidator::Loader.load(file_name)}
+  subject(:loader){ EcipValidator::Loader.load(file_name)}
 
   describe "valid" do
     it "should have required fields" do

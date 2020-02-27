@@ -2,4 +2,4 @@
 
 require 'eip_validator'
 
-EipValidator::Runner.run ARGV
+EcipValidator::Runner.run ARGV

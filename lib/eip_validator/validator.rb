@@ -1,6 +1,6 @@
 require 'active_model'
 
-module EipValidator
+module EcipValidator
   class Validator
     def initialize(opts = {})
       # ruby does not allow method with -
