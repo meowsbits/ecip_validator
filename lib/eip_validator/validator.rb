@@ -16,7 +16,7 @@ module EipValidator
     end
 
     include ActiveModel::Model
-    attr_accessor :ecip, :lang, :license, :title, :author, :type, :category, :status, :created, :updated
+    attr_accessor :ecip, :lang, :translator, :license, :title, :author, :type, :category, :status, :created, :updated
     attr_accessor :replaces, :requires, :layer, :resolution
     # replace - with _
     attr_accessor :discussions_to, :superseded_by, :review_period_end
