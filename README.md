@@ -1,10 +1,10 @@
-# EIP validator
+# ECIP validator
 
 ## Validation rules
 
 ### Mandatory fields
 
-- eip
+- ecip
 - title
 - author
 - type
