@@ -22,7 +22,7 @@ module EipValidator
     attr_accessor :discussions_to, :superseded_by, :review_period_end
     validates_presence_of :ecip, :lang, :title, :author, :type, :status, :created
     validates_inclusion_of :category,
-                           in: %w(Core Networking Interface ERC),
+                           in: %w(Core Networking Interface ERC ECBP),
                            if: Proc.new { |v| v.type == 'Standards Track' }
     validates_inclusion_of :type, in: ['Standards Track', 'Informational', 'Meta']
     validates_inclusion_of :status, in: ['Draft', 'Last Call', 'Accepted', 'Final', 'Active', 'Abandoned', 'Deferred', 'Rejected', 'Superseded']
