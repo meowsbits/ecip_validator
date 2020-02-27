@@ -2,7 +2,7 @@
 
 ## Configuration
 
-Validation rules are implemented in the code at [./lib/ecip_validator/validator.rp](./lib/ecip_validator/validator.rp).
+Validation rules are implemented in the code at [./lib/ecip_validator/validator.rb](./lib/ecip_validator/validator.rb).
 
 ## Setup
 
