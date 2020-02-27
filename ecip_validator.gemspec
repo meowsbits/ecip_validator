@@ -6,11 +6,11 @@ require "eip_validator/version"
 Gem::Specification.new do |spec|
   spec.name          = "ecip_validator"
   spec.version       = EcipValidator::VERSION
-  spec.authors       = ["Makoto"]
-  spec.email         = ["@makoto_inoue"]
+  spec.authors       = ["Meows"]
+  spec.email         = ["@meowsbits"]
 
-  spec.summary       = "Small library to check if EIP doc has valid front matter"
-  spec.homepage      = "https://github.com/makoto/eip_validator"
+  spec.summary       = "Small library to check if ECIP doc has valid front matter"
+  spec.homepage      = "https://github.com/meowsbits/ecip_validator"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
