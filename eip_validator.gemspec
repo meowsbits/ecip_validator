@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "eip_validator/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "eip_validator"
+  spec.name          = "ecip_validator"
   spec.version       = EipValidator::VERSION
   spec.authors       = ["Makoto"]
   spec.email         = ["@makoto_inoue"]
